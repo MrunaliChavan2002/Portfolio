@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://unpkg.com/open-props/easings.min.css");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #333333;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.profile-pic {
+  width: 500px; 
+  height: 240px; 
+  object-fit: cover; 
+  border-radius: 50%;
+}
+
+
+
+nav {
+    background-color: #262626;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#profile {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section__pic-container img {
+    width: 200px;
+    border-radius: 90%;
+}
+
+.section__text {
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.section__text__p2 {
+    font-size: 18px;
+    color: #00bcd4;
+    font-weight: 600;
+}
+
+.btn-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn-color-1 {
+    background-color: #00bcd4;
+    color: #ffffff;
+}
+
+.btn-color-2 {
+    background-color: #ffffff;
+    color: #00bcd4;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+#socials-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+#about {
+    background-color: #262626;
+    padding: 50px 20px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-pic {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.text-container {
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: center;
+    animation: slideIn 2s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#experience {
+    padding: 50px 20px;
+}
+
+.experience-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-containers {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.details-container {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+}
+
+.experience-sub-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.article-container article {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.article-container h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.article-container p {
+    margin: 0;
+    font-size: 14px;
+    color: #00bcd4;
+}
+
+#projects {
+    background-color: #262626;
+    padding: 50px 20px;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-title {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-info-container p {
+    margin: 0;
+}
+
+.contact-icon {
+    width: 30px;
+}
+
+footer {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .nav-links {
+    justify-content: center;
+    gap: 20px;
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+
+  .section-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .about-containers {
+      flex-direction: column;
+  }
+}
+
+
+/* Styles for Skills Section */
+
+#experience {
+  padding: 80px 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+}
+
+#experience .section__text__p1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#experience .title {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.details-container {
+  width: 300px;
+}
+
+
+.details-container h2{
+  text-align: center;
+}
+
+.experience-sub-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.article {
+  width: 100%;
+  max-width: 200px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.article img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.article h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.article p {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+.arrow {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+  
